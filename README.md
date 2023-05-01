@@ -33,7 +33,9 @@
 
 # 📖 [Tutorial Java-MongoDB] <a name="about-project"></a>
 
-> A guide for database connection using MongoDB and Java
+> Una guia rapida para la creacion de cuenta en MongoDB y la conexion exitosa hacia dicha base de datos. Para mayor detalle revisar las `ISSUES`
+
+Link: https://github.com/storres20/java-mongodb/issues
 
 **[Tutorial Java-MongoDB]** is a quick guide.
 
