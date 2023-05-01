@@ -124,7 +124,8 @@ Paso 9: Click en boton "Go to Databases"
 
 Paso 10: Retorno a pagina principal del Dashboard
 
-![image](https://user-images.githubusercontent.com/81504385/235513568-46022d70-f644-4797-8de6-0be2a1b53649.png)
+![image](https://user-images.githubusercontent.com/81504385/235513697-0b02e67a-46dd-4820-a1a6-5b82f1ee73b4.png)
+
 
 
 
