@@ -22,11 +22,14 @@ public class Principal {
         // Conexion a la base de datos
 	Conexion cn = new Conexion();
 
-        MongoCollection<Document> collection = cn.database.getCollection("categories");
+        MongoCollection<Document> collection = cn.database.getCollection("cursos");
 
         try {
             for (Document document : collection.find()) {
-                System.out.println(document.get("_id") + " " + document.getString("nombre"));
+                // .get -> ObjectID, .getString -> string, .getInteger -> int32
+                // "_id" -> ObjectId, "nombre" -> string, "cantAlumnos" -> int32
+                System.out.print("id: "+document.get("_id") + ", curso:" + document.getString("nombre"));
+                System.out.println(", horario: "+document.getString("horario")+", Cant. Alumnos: "+document.getInteger("cantAlumnos"));
             }
             cn.mongoClient.close();
         } catch (Exception e) {

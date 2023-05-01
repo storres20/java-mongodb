@@ -20,13 +20,13 @@ public class Conexion {
 
     public Conexion() {
         try {
-            ConnectionString connString = new ConnectionString("mongodb+srv://demo:2ZS91XrwfQqNbFyU@cluster0.8kaczfr.mongodb.net");
+            ConnectionString connString = new ConnectionString("mongodb+srv://clonkan:KyoT5BdZJLVlA2PT@cluster0.gvhfonl.mongodb.net");
             MongoClientSettings settings = MongoClientSettings.builder()
                     .applyConnectionString(connString)
                     .retryWrites(true)
                     .build();
             mongoClient = MongoClients.create(settings);
-            database = mongoClient.getDatabase("pacientes");
+            database = mongoClient.getDatabase("universidad");
         } catch (Exception e) {
             System.err.println("Error: " + e);
         }
